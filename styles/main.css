@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  background-color: #80E2FF;
+}
+body nav {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  height: 112px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body nav .left-nav ul,
+body nav .right-nav {
+  display: flex;
+  align-items: center;
+}
+body nav .left-nav {
+  margin-left: 32px;
+  justify-content: start;
+}
+body nav .left-nav ul {
+  list-style: none;
+  padding: 0;
+  gap: 42px;
+}
+body nav .left-nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body nav .left-nav ul a {
+  text-decoration: none;
+}
+body nav .left-nav ul a:hover,
+body nav .left-nav ul a:visited,
+body nav .left-nav ul a:link,
+body nav .left-nav ul a:active {
+  color: #182327;
+}
+body nav .right-nav {
+  margin-right: 32px;
+  gap: 22px;
+}
+body nav .right-nav button {
+  background-color: #5D696D;
+  color: #fff;
+  border: none;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body nav .right-nav button:hover {
+  cursor: pointer;
+}
+body nav .right-nav .profile-btn {
+  border-radius: 50px;
+  width: 52px;
+}
+body nav .right-nav .signup-btn {
+  border-radius: 8px;
+  width: 107px;
+}
+body nav .right-nav .menu-icon {
+  display: none;
+}
+body nav .right-nav .search-bar {
+  width: 330px;
+  height: 52px;
+  padding: 0;
+  border: 1px solid #D8E0E2;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+body nav .right-nav .search-bar:hover {
+  cursor: text;
+  border: 1px solid #a2a9aa;
+}
+body nav .right-nav .search-bar .search-icon {
+  width: 21px;
+  height: 21px;
+  padding: 0px 15px;
+  background-color: #5D696D;
+  -webkit-mask: url(/images/vectors/Search.svg) no-repeat center;
+  mask: url(/images/vectors/Search.svg) no-repeat center;
+}
+body nav .right-nav .search-bar input {
+  border: none;
+  font-size: 14px;
+  color: #5D696D;
+  width: 195px;
+}
+body nav .right-nav .search-bar input:focus {
+  outline: none;
+}
+
+@media (max-width: 1245px) {
+  body nav {
+    height: 88px;
+  }
+  body nav .left-nav {
+    margin-left: 18px;
+  }
+  body nav .left-nav ul {
+    gap: 12px;
+  }
+  body nav .right-nav {
+    margin-right: 18px;
+    gap: 12px;
+  }
+  body nav .right-nav .search-bar {
+    display: none;
+  }
+  body nav .right-nav .profile-btn {
+    width: 40px;
+    height: 40px;
+  }
+  body nav .right-nav .signup-btn {
+    width: 60px;
+    height: 40px;
+    font-size: 11px;
+  }
+}
+@media (max-width: 610px) {
+  body .open-navbar {
+    top: 0px;
+  }
+  body nav {
+    top: -330px;
+    height: 270px;
+    padding: 62px 0;
+    position: relative;
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+  }
+  body nav .left-nav ul,
+  body nav .right-nav {
+    flex-direction: column;
+  }
+  body nav .left-nav ul {
+    gap: 12px;
+  }
+  body nav .left-nav .logo-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 12px;
+  }
+  body nav .right-nav {
+    margin: 12px 0;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+  body nav .right-nav .menu-icon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+    height: 20px;
+    padding: 0;
+  }
+  body nav .right-nav .menu-icon span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: #182327;
+    border-radius: 20px;
+    transition: all 300ms ease;
+  }
+  body nav .right-nav .menu-open span:nth-child(1) {
+    transform: translate(0px, 6.8px) rotate(45deg);
+    transition: all 300ms ease;
+  }
+  body nav .right-nav .menu-open span:nth-child(2) {
+    opacity: 0;
+  }
+  body nav .right-nav .menu-open span:nth-child(3) {
+    transform: translate(0px, -6.8px) rotate(-45deg);
+    transition: all 300ms ease;
+  }
+}/*# sourceMappingURL=main.css.map */
