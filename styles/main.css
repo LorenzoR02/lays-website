@@ -149,6 +149,46 @@ body .hero .text-content button {
   margin-top: 40px;
   cursor: pointer;
 }
+body .pinned-crisps {
+  padding: 0 100px;
+}
+body .pinned-crisps h3 {
+  font-family: "Domine", serif;
+  margin-top: 150px;
+  margin-bottom: 70px;
+  font-size: 42px;
+  font-weight: 700;
+  width: 30%;
+}
+body .pinned-crisps .crisps-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8%;
+}
+body .pinned-crisps .crisps-container img {
+  width: 38%;
+}
+body .pinned-crisps .crisps-container .right-container h5 {
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Domine", serif;
+}
+body .pinned-crisps .crisps-container .right-container .price-text {
+  font-weight: 400;
+  color: #5D696D;
+}
+body .pinned-crisps .crisps-container .right-container .price-number {
+  font-weight: 700;
+  font-size: 22px;
+}
+body .pinned-crisps .crisps-container .right-container .crisps-description {
+  font-weight: 400;
+  color: #5D696D;
+}
+body .pinned-crisps .crisps-container .right-container img {
+  width: 114px;
+}
 
 @media (max-width: 1245px) {
   body nav {
