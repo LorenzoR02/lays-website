@@ -158,7 +158,7 @@ body .pinned-crisps h3 {
   margin-bottom: 70px;
   font-size: 42px;
   font-weight: 700;
-  width: 30%;
+  width: 38%;
 }
 body .pinned-crisps .crisps-container {
   display: flex;
@@ -173,6 +173,7 @@ body .pinned-crisps .crisps-container .right-container h5 {
   font-size: 22px;
   font-weight: 700;
   font-family: "Domine", serif;
+  margin: 16px 0;
 }
 body .pinned-crisps .crisps-container .right-container .price-text {
   font-weight: 400;
@@ -181,10 +182,32 @@ body .pinned-crisps .crisps-container .right-container .price-text {
 body .pinned-crisps .crisps-container .right-container .price-number {
   font-weight: 700;
   font-size: 22px;
+  margin: 16px 0;
 }
 body .pinned-crisps .crisps-container .right-container .crisps-description {
   font-weight: 400;
   color: #5D696D;
+  margin-bottom: 44px;
+}
+body .pinned-crisps .crisps-container .right-container .btn-seemore {
+  background-color: transparent;
+  border: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 28px;
+  cursor: pointer;
+}
+body .pinned-crisps .crisps-container .right-container .btn-buynow {
+  background-color: #182327;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px 30px;
+  cursor: pointer;
 }
 body .pinned-crisps .crisps-container .right-container img {
   width: 114px;
@@ -232,6 +255,32 @@ body .pinned-crisps .crisps-container .right-container img {
     margin-top: 20px;
     margin-bottom: 50px;
   }
+  body .pinned-crisps {
+    padding: 0 100px;
+  }
+  body .pinned-crisps h3 {
+    width: 60%;
+  }
+  body .pinned-crisps .crisps-container {
+    gap: 4%;
+  }
+  body .pinned-crisps .crisps-container img {
+    width: 38%;
+  }
+  body .pinned-crisps .crisps-container .right-container .price-text {
+    margin: 4px 0;
+  }
+  body .pinned-crisps .crisps-container .right-container .crisps-description {
+    margin-bottom: 26px;
+  }
+  body .pinned-crisps .crisps-container .right-container .btn-seemore {
+    padding: 2px 4px;
+    font-size: 16px;
+  }
+  body .pinned-crisps .crisps-container .right-container .btn-buynow {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
 }
 @media (max-width: 846px) {
   body .hero {
@@ -241,6 +290,16 @@ body .pinned-crisps .crisps-container .right-container img {
   }
   body .hero .text-content h1 {
     margin-top: 0;
+  }
+  body .pinned-crisps {
+    padding: 0 32px;
+  }
+  body .pinned-crisps h3 {
+    margin-top: 100px;
+    width: 100%;
+  }
+  body .pinned-crisps .crisps-container img {
+    width: 44%;
   }
 }
 @media (max-width: 610px) {
@@ -311,5 +370,22 @@ body .pinned-crisps .crisps-container .right-container img {
   }
   body .hero {
     margin-top: 62px;
+  }
+  body .pinned-crisps {
+    padding: 0 18px;
+  }
+  body .pinned-crisps h3 {
+    margin-top: 100px;
+    font-size: 42px;
+  }
+  body .pinned-crisps .crisps-container {
+    flex-direction: column;
+  }
+  body .pinned-crisps .crisps-container img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  body .pinned-crisps .crisps-container .right-container img {
+    margin-bottom: 6px;
   }
 }/*# sourceMappingURL=main.css.map */

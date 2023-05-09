@@ -5,6 +5,7 @@ $color-yellow: #FFD36A;
 $color-black: #182327;
 $color-grey: #5D696D;
 
+$font-manrope: 'Manrope', sans-serif;
 $font-domine: 'Domine', serif;
 
 body {
@@ -12,7 +13,7 @@ body {
     margin: 0;
     padding: 0;
 
-    font-family: 'Manrope', sans-serif;
+    font-family: $font-manrope;
     background-color: #fff;
 
     nav {
@@ -202,7 +203,7 @@ body {
             font-size: 42px;
             font-weight: 700;
 
-            width: 30%;
+            width: 38%;
         }
 
         .crisps-container {
@@ -220,6 +221,7 @@ body {
                     font-size: 22px;
                     font-weight: 700;
                     font-family: $font-domine;
+                    margin: 16px 0;
                 }
 
                 .price-text {
@@ -230,18 +232,40 @@ body {
                 .price-number {
                     font-weight: 700;
                     font-size: 22px;
+                    margin: 16px 0;
                 }
-                
+
                 .crisps-description {
                     font-weight: 400;
                     color: $color-grey;
+                    margin-bottom: 44px;
+                }
+
+                .btn-seemore {
+                    background-color: transparent;
+                    border: none;
+                    font-family: $font-manrope;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-left: 28px;
+                    cursor: pointer;
+                }
+
+                .btn-buynow {
+                    background-color: $color-black;
+                    color: #fff;
+                    border: none;
+                    border-radius: 8px;
+                    font-family: $font-manrope;
+                    font-size: 18px;
+                    font-weight: 600;
+                    padding: 20px 30px; 
+                    cursor: pointer;
                 }
 
                 img {
                     width: 114px;
                 }
-
-
             }
         }
     }
@@ -303,6 +327,42 @@ body {
                 }
             }
         }
+
+        .pinned-crisps {
+            padding: 0 100px;
+    
+            h3 {    
+                width: 60%;
+            }
+    
+            .crisps-container {
+                gap: 4%;
+    
+                img {
+                    width: 38%;
+                }
+    
+                .right-container {    
+                    .price-text {
+                        margin: 4px 0;
+                    }
+    
+                    .crisps-description {
+                        margin-bottom: 26px;
+                    }
+    
+                    .btn-seemore {
+                        padding: 2px 4px;
+                        font-size: 16px;
+                    }
+    
+                    .btn-buynow {
+                        padding: 12px 20px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -316,6 +376,22 @@ body {
             .text-content {
                 h1 {
                     margin-top: 0;
+                }
+            }
+        }
+
+        .pinned-crisps {
+            padding: 0 32px;
+
+            h3 {
+                margin-top: 100px;
+                width: 100%;
+            }
+
+            .crisps-container {
+    
+                img {
+                    width: 44%;
                 }
             }
         }
@@ -415,6 +491,32 @@ body {
 
         .hero {
             margin-top: 62px;
+        }
+
+        .pinned-crisps {
+            padding: 0 18px;
+
+            h3 {
+                margin-top: 100px;
+                font-size: 42px;
+            }
+
+            .crisps-container {
+                flex-direction: column;
+
+                img {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+
+                .right-container {
+                    img {
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+
+
         }
     }
 }
