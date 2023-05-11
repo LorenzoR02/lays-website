@@ -6,6 +6,7 @@ body {
   padding: 0;
   font-family: "Manrope", sans-serif;
   background-color: #fff;
+  color: #182327;
 }
 body nav {
   background-color: #fff;
@@ -212,6 +213,80 @@ body .pinned-crisps .crisps-container .right-container .btn-buynow {
 body .pinned-crisps .crisps-container .right-container img {
   width: 114px;
 }
+body .crisps-catalog {
+  padding: 0 100px;
+  margin-top: 150px;
+}
+body .crisps-catalog .catalog-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+body .crisps-catalog .catalog-text h3 {
+  font-family: "Domine", serif;
+  font-size: 700;
+  font-size: 42px;
+  margin: 0;
+  width: 40%;
+}
+body .crisps-catalog .catalog-text p {
+  margin: 0;
+  width: 40%;
+}
+body .crisps-catalog .catalog-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 60px;
+}
+body .crisps-catalog .catalog-container .crisps-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .crisps-catalog .catalog-container .crisps-tab .crisps-image {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+body .crisps-catalog .catalog-container .crisps-tab img {
+  width: 100%;
+}
+body .crisps-catalog .catalog-container .crisps-tab button {
+  background-color: #182327;
+  padding: 17px;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .crisps-catalog .catalog-container .crisps-tab button img {
+  width: 20px;
+}
+body .crisps-catalog .catalog-container .crisps-tab .plus-container {
+  width: 0;
+  height: 0;
+  transform: translateX(-80px) translateY(-30px);
+}
+body .crisps-catalog .catalog-container .crisps-tab .crisps-text .crisps-price {
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0;
+}
+body .crisps-catalog .catalog-container .crisps-tab .crisps-text .crisps-description {
+  color: #5D696D;
+  font-weight: 600;
+  margin: 12px 0;
+}
+body .crisps-catalog .catalog-container .crisps-tab .crisps-text img {
+  width: 26%;
+}
 
 @media (max-width: 1245px) {
   body nav {
@@ -281,6 +356,15 @@ body .pinned-crisps .crisps-container .right-container img {
     padding: 12px 20px;
     font-size: 16px;
   }
+  body .crisps-catalog .catalog-text h3 {
+    width: 60%;
+  }
+  body .crisps-catalog .catalog-text p {
+    width: 60%;
+  }
+  body .crisps-catalog .catalog-container .crisps-tab .crisps-text img {
+    width: 50%;
+  }
 }
 @media (max-width: 846px) {
   body .hero {
@@ -300,6 +384,22 @@ body .pinned-crisps .crisps-container .right-container img {
   }
   body .pinned-crisps .crisps-container img {
     width: 44%;
+  }
+  body .crisps-catalog {
+    padding: 0 32px;
+  }
+  body .crisps-catalog .catalog-text h3 {
+    width: 90%;
+  }
+  body .crisps-catalog .catalog-text p {
+    width: 90%;
+  }
+  body .crisps-catalog .catalog-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  body .crisps-catalog .catalog-container .crisps-tab .crisps-text img {
+    width: 40%;
   }
 }
 @media (max-width: 610px) {
@@ -387,5 +487,27 @@ body .pinned-crisps .crisps-container .right-container img {
   }
   body .pinned-crisps .crisps-container .right-container img {
     margin-bottom: 6px;
+  }
+  body .crisps-catalog {
+    margin-top: 100px;
+  }
+  body .crisps-catalog .catalog-container {
+    grid-column-gap: 15px;
+    grid-row-gap: 40px;
+  }
+  body .crisps-catalog .catalog-container .crisps-image .plus-container {
+    transform: translateX(-60px) translateY(-26px);
+  }
+  body .crisps-catalog .catalog-container .crisps-image .plus-container img {
+    width: 18px;
+  }
+  body .crisps-catalog .catalog-container .crisps-image .plus-container button {
+    padding: 12px;
+  }
+}
+@media (max-width: 450px) {
+  body .crisps-catalog .catalog-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
   }
 }/*# sourceMappingURL=main.css.map */
