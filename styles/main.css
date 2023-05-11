@@ -214,6 +214,9 @@ body .pinned-crisps .crisps-container .right-container img {
   width: 114px;
 }
 body .crisps-catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0 100px;
   margin-top: 150px;
 }
@@ -223,6 +226,7 @@ body .crisps-catalog .catalog-text {
   justify-content: center;
   align-items: center;
   gap: 18px;
+  width: 100%;
   margin-bottom: 70px;
   text-align: center;
 }
@@ -238,6 +242,7 @@ body .crisps-catalog .catalog-text p {
   width: 40%;
 }
 body .crisps-catalog .catalog-container {
+  margin-bottom: 55px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -286,6 +291,17 @@ body .crisps-catalog .catalog-container .crisps-tab .crisps-text .crisps-descrip
 }
 body .crisps-catalog .catalog-container .crisps-tab .crisps-text img {
   width: 26%;
+}
+body .crisps-catalog button {
+  background-color: #182327;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 20px 30px;
+  cursor: pointer;
 }
 
 @media (max-width: 1245px) {
@@ -364,6 +380,10 @@ body .crisps-catalog .catalog-container .crisps-tab .crisps-text img {
   }
   body .crisps-catalog .catalog-container .crisps-tab .crisps-text img {
     width: 50%;
+  }
+  body .crisps-catalog button {
+    padding: 16px 24px;
+    font-size: 16px;
   }
 }
 @media (max-width: 846px) {
@@ -507,6 +527,7 @@ body .crisps-catalog .catalog-container .crisps-tab .crisps-text img {
 }
 @media (max-width: 450px) {
   body .crisps-catalog .catalog-container {
+    margin-bottom: 38px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
   }

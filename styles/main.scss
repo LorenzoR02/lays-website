@@ -272,6 +272,9 @@ body {
     }
 
     .crisps-catalog {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 0 100px;
         margin-top: 150px;
 
@@ -281,6 +284,7 @@ body {
             justify-content: center;
             align-items: center;
             gap: 18px;
+            width: 100%;
 
             margin-bottom: 70px;
             text-align: center;
@@ -300,6 +304,7 @@ body {
         }
 
         .catalog-container {
+            margin-bottom: 55px;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
@@ -308,7 +313,7 @@ body {
 
             .crisps-tab {
                 display: flex;
-                flex-direction: column  ;
+                flex-direction: column;
                 gap: 20px;
 
                 .crisps-image {
@@ -361,8 +366,19 @@ body {
                         width: 26%;
                     }
                 }
-
             }
+        }
+
+        button {
+            background-color: $color-black;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-family: $font-manrope;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 20px 30px;
+            cursor: pointer;
         }
     }
 }
@@ -461,27 +477,32 @@ body {
         }
 
         .crisps-catalog {
-    
+
             .catalog-text {
                 h3 {
                     width: 60%;
                 }
-    
+
                 p {
                     width: 60%;
                 }
             }
 
             .catalog-container {
-    
+
                 .crisps-tab {
-    
+
                     .crisps-text {
                         img {
                             width: 50%;
                         }
                     }
                 }
+            }
+
+            button {
+                padding: 16px 24px;
+                font-size: 16px;
             }
         }
     }
@@ -519,12 +540,12 @@ body {
 
         .crisps-catalog {
             padding: 0 32px;
-    
+
             .catalog-text {
                 h3 {
                     width: 90%;
                 }
-    
+
                 p {
                     width: 90%;
                 }
@@ -533,9 +554,9 @@ body {
             .catalog-container {
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(3, 1fr);
-    
+
                 .crisps-tab {
-    
+
                     .crisps-text {
                         img {
                             width: 40%;
@@ -697,9 +718,10 @@ body {
     body {
         .crisps-catalog {
             .catalog-container {
+                margin-bottom: 38px;
                 grid-template-columns: repeat(1, 1fr);
                 grid-template-rows: repeat(6, 1fr);
-            }
+            }   
         }
     }
 }
