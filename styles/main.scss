@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
 $color-blue: #80E2FF;
 $color-yellow: #FFD36A;
 $color-black: #182327;
@@ -7,6 +8,7 @@ $color-grey: #5D696D;
 
 $font-manrope: 'Manrope', sans-serif;
 $font-domine: 'Domine', serif;
+$font-inter: 'Inter', sans-serif;
 
 body {
     box-sizing: border-box;
@@ -468,8 +470,74 @@ body {
         }
     }
 
+    .testimonial {
+        margin-top: 150px;
+        background-color: $color-blue;
 
+        .testimonial-content {
+            padding: 100px;
+
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+
+            .testimonial-text {
+                width: 50%;
+
+                color: $color-black;
+
+
+                h3 {
+                    font-family: $font-domine;
+                    font-weight: 700;
+                    font-size: 42px;
+                    margin-bottom: 70px;
+                }
+
+                .testimonial-description {
+                    font-weight: 500;
+                    font-style: italic;
+                    font-size: 22px;
+                    font-family: $font-inter;
+                    line-height: 36px;
+
+                    margin-bottom: 48px;
+                }
+
+                span {
+                    display: block;
+                    height: 2px;
+                    width: 100%;
+                    background-color: #33D1FF;
+                    border-radius: 1px;
+                }
+
+                .testimonial-name {
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 32px;
+
+                    margin-top: 28px;
+                    margin-bottom: 6px;
+                }
+
+                .testimonial-age {
+                    font-weight: 400;
+                    line-height: 28px;
+
+                    margin-top: 6px;
+                }
+            }
+
+            img {
+                width: calc(50% - 10%);
+                padding-left: 150px;
+            }
+        }
+    }
 }
+
+
 
 
 @media (max-width: 1245px) {
@@ -593,6 +661,36 @@ body {
                 font-size: 16px;
             }
         }
+
+        .testimonial {
+            
+            .testimonial-content {
+                
+            align-items: start;
+    
+                .testimonial-text {
+                    h3 {
+                        font-size: 32px;
+                    }
+    
+                    .testimonial-description {
+                        font-size: 18px;
+                    }
+    
+                    .testimonial-name {
+                        font-size: 20px;
+                    }
+    
+                    .testimonial-age {
+                    }
+                }
+
+                img {
+                    width: 50%;
+                    padding-left: 50px;
+                }
+            }
+        }
     }
 }
 
@@ -656,6 +754,28 @@ body {
 
         .carousel {
             margin: 100px 32px;
+        }
+
+        .testimonial {
+            
+            .testimonial-content {
+                
+                flex-direction: column;
+                align-items: center;
+    
+                .testimonial-text {
+                    width: 100%;
+
+                    h3 {
+                        margin-bottom: 28px;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
         }
     }
 }
@@ -800,6 +920,46 @@ body {
                             padding: 12px;
                         }
                     }
+                }
+            }
+        }
+
+        .testimonial {
+            margin-top: 100px;
+
+            .testimonial-content {
+                padding: 42px 32px;
+                
+                flex-direction: column;
+                align-items: center;
+    
+                .testimonial-text {
+                    width: 100%;
+
+                    h3 {
+                        margin-top: 38px;
+
+                        font-size: 26px;
+                    }
+
+                    .testimonial-description {
+                        font-size: 14px;
+                        line-height: 24px;
+
+                        margin-bottom: 38px;
+                    }
+    
+                    .testimonial-name {
+                        font-size: 22px;
+                    }
+    
+                    .testimonial-age {
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    padding: 0;
                 }
             }
         }
