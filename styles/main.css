@@ -9,6 +9,7 @@ body {
   color: #182327;
 }
 body nav {
+  z-index: 2;
   background-color: #fff;
   position: fixed;
   width: 100%;
@@ -303,6 +304,75 @@ body .crisps-catalog button {
   padding: 20px 30px;
   cursor: pointer;
 }
+body .carousel {
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .carousel h3 {
+  font-family: "Domine", serif;
+  font-weight: 700;
+  font-size: 42px;
+  color: #182327;
+  margin: 0;
+}
+body .carousel .main-carousel {
+  width: 100%;
+  margin-top: 38px;
+}
+body .carousel .main-carousel .carousel-cell {
+  width: 50%;
+  height: -moz-max-content;
+  height: max-content;
+  counter-increment: gallery-cell;
+}
+body .carousel .main-carousel .carousel-cell img {
+  width: 100%;
+}
+body .carousel .main-carousel .carousel-cell .cell-container {
+  height: -moz-max-content;
+  height: max-content;
+  padding: 10px;
+}
+body .carousel .main-carousel .carousel-cell .cell-container p {
+  font-weight: 600;
+  font-size: 22px;
+  color: #182327;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+body .carousel .main-carousel .carousel-cell .cell-container .play-video {
+  display: flex;
+  width: -moz-min-content;
+  width: min-content;
+  cursor: pointer;
+}
+body .carousel .main-carousel .carousel-cell .cell-container .play-video img {
+  width: 20px;
+}
+body .carousel .main-carousel .carousel-cell .cell-container .play-video p {
+  font-weight: 400;
+  font-size: 16px;
+  width: -moz-max-content;
+  width: max-content;
+  color: #5D696D;
+  margin: 0 10px;
+}
+body .carousel .main-carousel .flickity-button {
+  display: none;
+}
+body .carousel .main-carousel .flickity-page-dots .dot {
+  height: 4px;
+  width: 28px;
+  margin: 0 3px;
+  border-radius: 2px;
+  background-color: #5D696D;
+}
+body .carousel .main-carousel .flickity-page-dots .dot.is-selected {
+  background: #182327;
+}
 
 @media (max-width: 1245px) {
   body nav {
@@ -421,6 +491,9 @@ body .crisps-catalog button {
   body .crisps-catalog .catalog-container .crisps-tab .crisps-text img {
     width: 40%;
   }
+  body .carousel {
+    margin: 100px 32px;
+  }
 }
 @media (max-width: 610px) {
   body .open-navbar {
@@ -526,9 +599,24 @@ body .crisps-catalog button {
   }
 }
 @media (max-width: 450px) {
+  body .crisps-catalog .catalog-text h3 {
+    font-size: 26px;
+  }
+  body .crisps-catalog .catalog-text p {
+    font-size: 14px;
+  }
   body .crisps-catalog .catalog-container {
     margin-bottom: 38px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr);
+  }
+  body .carousel h3 {
+    font-size: 26px;
+  }
+  body .carousel .main-carousel .carousel-cell {
+    width: 100%;
+  }
+  body .carousel .main-carousel .cell-container .cell-text p {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=main.css.map */
