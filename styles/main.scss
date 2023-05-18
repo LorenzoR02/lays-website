@@ -535,6 +535,50 @@ body {
             }
         }
     }
+
+    .store-near {
+        background-image: url("/images/Background-nearstore.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        padding: 100px 36%;
+
+        text-align: center;
+
+        h2 {
+            font-family: $font-domine;
+            font-size: 42px;
+            line-height: 46px;
+            font-weight: 700;
+            
+            margin: 0;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+
+            margin-bottom: 38px;
+        }
+
+        button {
+            background-color: $color-black;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 20px 36px;
+            cursor: pointer;
+        }
+    }
 }
 
 
@@ -691,6 +735,10 @@ body {
                 }
             }
         }
+
+        .store-near {
+            padding: 100px 28%;
+        }
     }
 }
 
@@ -776,6 +824,10 @@ body {
                     padding: 0;
                 }
             }
+        }
+
+        .store-near {
+            padding: 100px 20%;
         }
     }
 }
@@ -962,6 +1014,10 @@ body {
                     padding: 0;
                 }
             }
+        }
+
+        .store-near {
+            padding: 100px 10%;
         }
     }
 }
