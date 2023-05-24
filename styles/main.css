@@ -607,6 +607,18 @@ body footer .footer-content p {
   body .store-near {
     padding: 100px 28%;
   }
+  body footer {
+    padding: 100px 80px 64px 80px;
+  }
+  body footer img {
+    width: 40%;
+  }
+  body footer .footer-content {
+    width: 55%;
+  }
+  body footer .footer-content ul li {
+    padding-right: 18px;
+  }
 }
 @media (max-width: 846px) {
   body .hero {
@@ -662,6 +674,30 @@ body footer .footer-content p {
   }
   body .store-near {
     padding: 100px 20%;
+  }
+  body footer {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px 62px 64px 62px;
+  }
+  body footer img {
+    width: 100%;
+  }
+  body footer .footer-content {
+    width: 100%;
+    margin-top: 38px;
+  }
+  body footer .footer-content img {
+    width: 40px;
+  }
+  body footer .footer-content ul {
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+  }
+  body footer .footer-content ul li {
+    margin-top: 12px;
   }
 }
 @media (max-width: 610px) {
@@ -795,6 +831,9 @@ body footer .footer-content p {
   }
   body .store-near {
     padding: 100px 10%;
+  }
+  body footer {
+    padding: 55px 32px 38px 32px;
   }
 }
 @media (max-width: 450px) {
